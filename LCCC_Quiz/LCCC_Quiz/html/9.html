@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=1280, user-scalable=no" />
+		<link media="screen" href="style/style.css" rel="stylesheet" type="text/css">
+		<title>Question 9</title>
+	</head>
+	<body onload="IntroDialogueNine()">
+		 <div id="content">
+			<input type="image" src="images/close.png" id="exit"  onclick="exit()" />
+		</div> 
+	<!-- 	<img src="lccc.png"> -->
+	<div class="Question">
+		<header><div id="QuestionText">Question 9: True or False? Another LCCC campus is the Wellington Center</div></header><br><br><br>
+		<!-- <input type = "radio" id="rb1" value="False">
+		<label for="rb1">False</label><br>
+		<input type = "radio" id="rb2" value="True">
+		<label for="rb2">True</label><br>
+	 -->
+		<div class="buttonquiz">
+			<input type = "button" id="rb1butt" class="questionbutton" value="True" name="True" onclick="QuestionCheck(this.value)">
+		</div>
+		 <div class="buttonquiz">
+		<input type = "button" id="rb2butt" class="questionbutton" value="False" name="False" onclick="QuestionCheck(this.value)">
+		</div> 
+		   </div>
+		   <div class="answerimage">
+			<img id="imageanw" src="" alt="">
+		</div>
+		   <div class="timer">
+			Time Left :
+			<!-- <input id="minutes" type="text" readonly="true"> : -->
+						   
+			<input id="seconds" type="text" readonly="true" rows="2">
+							<label id="message"></label>
+		</div>
+
+		   <script src='js/fastclick.js'></script>
+		   <script src='js/jquery-1.10.2.min.js'></script>
+		   <script src='js/robotutils.js'></script>
+		  
+		   <script defer src='js/main.js'></script>
+		   <script defer src="js/Question9.js"></script>
+	</body>
+	<footer class="footerdebug">
+		<a href="test.html">Debug</a>
+	</footer>
+</html>

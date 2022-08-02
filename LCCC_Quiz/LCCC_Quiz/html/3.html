@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=1280, user-scalable=no" />
+		<link media="screen" href="style/style.css" rel="stylesheet" type="text/css">
+		<title>Question 3</title>
+	</head>
+	<body onload="IntroDialogueThree()">
+		 <div id="content">
+			<input type="image" src="images/close.png" id="exit"  onclick="exit()" />
+		</div> 
+	<!-- 	<img src="lccc.png"> -->
+	<div class="Question">
+		<header>Question 3: What building is not on LCCC's campus?</header><br><br>
+<!-- 		<input type = "radio" id="rb1" value="CollegeCenter">
+		<label for="rb1">College Center</label><br>
+		<input type = "radio" id="rb2" value="ATBuilding">
+		<label for="rb2">Advanced Technologies Building</label><br>
+		<input type = "radio" id="rb3" value="FakeBuilding">
+		<label for="rb3">Mellott Athletic Center</label><br>
+		<input type = "radio" id="rb4" value="MBLibrary">
+		<label for="rb4">Mike Bass Library</label><br> -->
+		<div class="buttonquiz">
+			<input type = "button" id="rb1butt" class="questionbutton" value="College Center" name="Buildings" onclick="QuestionCheck(this.value)">
+		</div>
+		 <div class="buttonquiz">
+		<input type = "button" id="rb2butt" class="questionbutton" value="Advanced Technologies Building" name="Buildings" onclick="QuestionCheck(this.value)">
+		</div> 
+		<div class="buttonquiz">
+			<input type = "button" id="rb3butt" class="questionbutton" value="Mellott Athletic Center" name="Buildings" onclick="QuestionCheck(this.value)">
+			</div> 
+			<div class="buttonquiz">
+				<input type = "button" id="rb4butt" class="questionbutton" value="Mike Bass Library" name="Buildings" onclick="QuestionCheck(this.value)">
+				</div> 
+		   </div>
+		   <div class="answerimage">
+			<img id="imageanw" src="" alt="">
+		</div>
+		   <div class="timer">
+			Time Left :
+			<!-- <input id="minutes" type="text" readonly="true"> : -->
+						   
+			<input id="seconds" type="text" readonly="true" rows="2">
+							<label id="message"></label>
+		</div>
+		<!--    <button id="quitquiz" class="button" onclick="returntoIndex()">Return to Start</button> -->
+		<script src='js/fastclick.js'></script>
+		<script src='js/jquery-1.10.2.min.js'></script>
+		<script src='js/robotutils.js'></script>
+		<script defer src='js/main.js'></script>
+		<script defer src="js/Question3.js"></script>
+	</body>
+	<footer class="footerdebug">
+		<a href="test.html">Debug</a>
+	</footer>
+</html>

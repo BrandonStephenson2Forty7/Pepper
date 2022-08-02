@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=1280, user-scalable=no" />
+		<link media="screen" href="style/style.css" rel="stylesheet" type="text/css">
+		<title>Question 6</title>
+	</head>
+	<body onload="IntroDialogueSix()">
+		 <div id="content">
+			<input type="image" src="images/close.png" id="exit"  onclick="exit()" />
+		</div> 
+	<!-- 	<img src="lccc.png"> -->
+	<div class="Question">
+		<header><div id="QuestionText">Question 6:Where is the ---- and Seed located?</header><br><br></div>
+	<!-- 	<input type = "radio" id="rb1" value="SagenSeed1">
+		<label id="rb1label" for="rb1">Spitzer Conference Center</label><br>
+		<input type = "radio" id="rb2" value="SagenSeed2">
+		<label id="rb2label" for="rb2">College Center</label><br>
+		<input type = "radio" id="rb3" value="SagenSeed3">
+		<label id="rb3label">Norton Culinary Arts Center</label><br>
+		<input type = "radio" id="rb4" value="SagenSeed4">
+		<label id="rb4label" for="rb4">Stocker Arts Center</label> -->
+		<div class="buttonquiz">
+			<input type = "button" id="rb1butt" class="questionbutton" value="Spitzer Conference Center" name="SnS" onclick="QuestionCheck(this.value)">
+		</div>
+		 <div class="buttonquiz">
+		<input type = "button" id="rb2butt" class="questionbutton" value="College Center" name="SnS" onclick="QuestionCheck(this.value)">
+		</div> 
+		<div class="buttonquiz">
+			<input type = "button" id="rb3butt" class="questionbutton" value="Norton Culinary Arts Center" name="SnS" onclick="QuestionCheck(this.value)">
+			</div> 
+			<div class="buttonquiz">
+				<input type = "button" id="rb4butt" class="questionbutton" value="Stocker Arts Center" name="SnS" onclick="QuestionCheck(this.value)">
+				</div> 
+		   </div>
+		   <div class="answerimage">
+			<img id="imageanw" src="" alt="">
+		</div>
+		   <div class="timer">
+			Time Left :
+			<!-- <input id="minutes" type="text" readonly="true"> : -->
+						   
+			<input id="seconds" type="text" readonly="true" rows="2">
+							<label id="message"></label>
+		</div>
+<!-- <button id="ass" class="button" onclick="changetext()">TestChangeText</button> -->
+		  <!--  <button id="quitquiz" class="button" onclick="returntoIndex()">Return to Start</button> -->
+		   <script src='js/fastclick.js'></script>
+		   <script src='js/jquery-1.10.2.min.js'></script>
+		   <script src='js/robotutils.js'></script>
+		  
+		   <script defer src='js/main.js'></script>
+		   <script defer src="js/Question6.js"></script>
+	</body>
+	<footer class="footerdebug">
+		<a href="test.html">Debug</a>
+	</footer>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=1280, user-scalable=no" />
+		<link media="screen" href="style/style.css" rel="stylesheet" type="text/css">
+		<title>Question 10</title>
+	</head>
+	<body onload="IntroDialogueTen()">
+		 <div id="content">
+			<input type="image" src="images/close.png" id="exit"  onclick="exit()" />
+		</div> 
+	<!-- 	<img src="lccc.png"> -->
+	<div class="Question">
+		<header>Question 10:What was the second choice to the first question of this quiz</header><br><br>
+<!-- 		<input type = "radio" id="rb1" value="2002">
+		<label for="rb1">2002</label><br>
+		<input type = "radio" id="rb2" value="1954">
+		<label for="rb2">1954</label><br>
+		<input type = "radio" id="rb3" value="1969">
+		<label for="rb3">1969</label><br>
+		<input type = "radio" id="rb4" value="1963">
+		<label for="rb4">1963</label> -->
+		<div class="buttonquiz">
+			<input type = "button" id="rb1butt" class="questionbutton" value="2002" name="LC_Year_Reprise" onclick="QuestionCheck(this.value)">
+		</div>
+		 <div class="buttonquiz">
+		<input type = "button" id="rb2butt" class="questionbutton" value="1954" name="LC_Year_Reprise" onclick="QuestionCheck(this.value)">
+		</div> 
+		<div class="buttonquiz">
+			<input type = "button" id="rb3butt" class="questionbutton" value="1969" name="LC_Year_Reprise" onclick="QuestionCheck(this.value)">
+			</div> 
+			<div class="buttonquiz">
+				<input type = "button" id="rb4butt" class="questionbutton" value="1963" name="LC_Year_Reprise" onclick="QuestionCheck(this.value)">
+				</div> 
+		   </div>
+		   <div class="answerimage">
+			<img id="imageanw" src="" alt="">
+		</div>
+		   <div class="timer">
+			Time Left :
+			<!-- <input id="minutes" type="text" readonly="true"> : -->
+						   
+			<input id="seconds" type="text" readonly="true" rows="2">
+							<label id="message"></label>
+		</div>
+
+		   
+		   <script src='js/fastclick.js'></script>
+		   <script src='js/jquery-1.10.2.min.js'></script>
+		   <script src='js/robotutils.js'></script>
+		  
+		   <script defer src='js/main.js'></script>
+		   <script defer src="js/Question10.js"></script>
+	</body>
+	<footer class="footerdebug">
+		<a href="test.html">Debug</a>
+	</footer>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Snake</title>
+    <style>
+ body{
+      background-color: skyblue;
+ }
+ .center{
+    margin:auto;
+    width: 60%;
+    border: 3px solid;
+    padding:10px;
+    text-align: center;
+    font-size: 2em;
+ }
+ .mainmenuh1{
+text-align: center;
+ }
+ #content {
+    position: relative;
+}
+
+    #content input {
+        position: absolute;
+        top: 0px;
+        right: 25px;
+    }
+	.snake{
+  background-color: hsl(200,100%,50%);
+  border: .25vmin solid black;
+}
+
+.food{
+  background-color: hsl(50,100%, 50%);
+  border:.25vmin solid black;
+}
+    </style>
+
+    <script src="game.js" defer type="module"></script>
+    <script src="main.js"></script>
+   <!--  <script src="food.js" defer type="module"></script>
+    <script src="grid.js" defer type="module"></script>
+    <script src="input.js" defer type="module"></script>
+    <script src="snake.js" defer type="module"></script> -->
+</head>
+<body>
+    <div id="content">
+        <input type="image" src="img/close.png" class="ribbon" id="exit" onclick="exit()" />
+    </div>
+    <h1 class="mainmenuh1" >Cup of Guide</h1>
+    <div class = "center">
+        <a href ="maingame.html">Start</a>
+    </div>
+    
+</body>
+</html>

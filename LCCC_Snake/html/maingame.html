@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Snake</title>
+        <style>
+            body{
+                height: 100vh;
+                width: 100vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* Removes margins */
+                margin:0;  
+               /*  background-color: black; */
+              }
+
+#game-board{
+  /* some gray ass color. I don't know what it is */
+  background-color: #CCC;
+  /* Not exactly sure but the idea seems to keep the board as a square and take
+  up as much of the screen as possible */
+  width: 100vmin;
+  height: 100vmin;
+  display: grid;
+  
+  
+    /* border: 1px solid black; */
+  /* Sets the amount of rows and columns for the grid */
+   grid-template-rows: repeat(21,1fr);
+  grid-template-columns: repeat(21,1fr); 
+}
+.snake{
+  /* background-color: hsl(200,100%,50%); 
+  border: .25px solid black;*/
+   width: 35px;
+  height: 35px; 
+}
+
+.food{
+/*   background-color: hsl(50,100%, 50%);
+  border:.25vmin solid black; */
+  width: 35px;
+  height: 35px; 
+}
+body{
+  background-color:skyblue;
+}
+
+#lblScore{
+  font-size: 2em;
+  position: absolute;
+  top: 8px;
+  left: 130px;
+}
+#lblScoreText{
+  font-size: 2em;
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+ .arrowbuttons{
+ font-size: 3.5em;
+size: 5em; 
+ width: 20px;
+height: 20px; 
+}
+#content {
+    position: relative;
+}
+
+    #content input {
+        position: absolute;
+         top: -300px; 
+        right: 100px; 
+        
+        z-index: 1;
+left: 900px;
+/* bottom: 425px;  */
+    }
+        </style>
+        <!-- defer makes the javascript load after the body -->
+        <script src="game.js" defer type="module"></script>
+        <script src="main.js" defer type="module"></script>
+        <script src="snake.js" defer type="module"></script>
+        <!-- <script src="input.js" defer type="module"></script> -->
+        <script src="robotutils.js"></script>
+        <!-- <script src="j-query-3.6.js"></script>
+    <script src="jquery-1.10.2.min.js"></script> -->
+    <script src="fastclick.js"></script>
+    </head>
+    <body>
+    <!-- <label  class="score">my text</label> --> 
+      <!-- <h1 class = "score">(..)</h1> -->
+      <a href="index.html"> </a>
+      <div id="content">
+        <input type="image" src="img/close.png" class="ribbon" id="exit" onclick="exit()" />
+    </div>
+      <label id="lblScoreText">Score:</label><label id="lblScore">0</label>
+     
+      
+      <div class="arrowbuttons">
+      <button id="buttonright" type="button">→</button>
+      <button id="buttonleft" type="button">←</button>
+      <button id="buttonup" type="button">↑</button>
+      <button id="buttondown" type="button">↓</button>
+      </div> 
+    <!-- <button id="test" type="button"></button> -->
+      
+  
+<div id="game-board">
+   <!-- Where all the game pieces reside during gameplay-->
+<!-- <div class="food">Have an image in here, may be better for pepper</div> -->
+
+</div>
+<!-- <div class="arrowbuttons">
+  <button id="buttonright" type="button">→</button>
+  <button id="buttonleft" type="button">←</button>
+  <button id="buttonup" type="button">↑</button>
+  <button id="buttondown" type="button">↓</button>
+  </div> -->
+    </body>
+  <!--   <div class="snake"><img src="img/snakehead.png" alt="snakehead"></div> -->
+</html>
+<!-- Arrows from https://unicode-table.com/en/sets/arrow-symbols/#left-arrows -->

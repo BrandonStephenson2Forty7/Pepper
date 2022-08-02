@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=1280, user-scalable=no" />
+    <link rel='stylesheet' href='style/style.css' />
+    <title>Question 1</title>
+    
+
+   <!-- <script defer type="text/html" src="/libs/qimessaging/2/qimessaging.js"></script>
+  <script defer type="text/html" src="/libs/qi/2/qi.js"></script>  -->
+</head>
+<body onload="IntroDialogueOne()">
+
+ 
+    
+   
+    <div id="content">
+        <input type="image" src="images/close.png" class="ribbon" id="exit" onclick="exit()" />
+    </div>
+   <div class="Question">
+<header>Question 1: In What year was LCCC founded?</header><br><br>
+<div class="buttonquiz">
+    <input type = "button" id="rb1butt" class="questionbutton" value="1963" name="LC_Year" onclick="QuestionCheck(this.value)">
+</div>
+ <div class="buttonquiz">
+<input type = "button" id="rb2butt" class="questionbutton" value="1969" name="LC_Year" onclick="QuestionCheck(this.value)">
+</div> 
+<div class="buttonquiz">
+    <input type = "button" id="rb3butt" class="questionbutton" value="2002" name="LC_Year" onclick="QuestionCheck(this.value)">
+    </div> 
+    <div class="buttonquiz">
+        <input type = "button" id="rb4butt" class="questionbutton" value="1954" name="LC_Year" onclick="QuestionCheck(this.value)">
+        </div> 
+<div class="answerimage">
+    <img id="imageanw" src="" alt="">
+</div>
+<div class="timer">
+    Time Left :
+    <!-- <input id="minutes" type="text" readonly="true"> : -->
+                   
+    <input id="seconds" type="text" readonly="true" rows="2">
+                    <label id="message"></label>
+</div>
+
+   </div>
+<p id="answercheck"></p><br>
+
+<!-- <button id="quitquiz" class="button" onclick="returntoIndex()">Return to Start</button> -->
+<script defer src='js/main.js'></script>
+  <script defer src="js/Question1.js"></script> 
+    <script  src='js/fastclick.js'></script>
+    <script src='js/jquery-1.10.2.min.js'></script>
+    <script src='js/robotutils.js'></script>
+    <!-- <script src="js/QuestionLogic.js"></script> -->
+    
+</body>
+<footer class="footerdebug">
+    <a href="test.html">Debug</a>
+</footer>
+</html>
